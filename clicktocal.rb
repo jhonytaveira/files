@@ -14,16 +14,16 @@ query.each do |q|
   path = "/home/jhony/#{q[1, 2]}.call"
   File.open(path, "w+") do |f|
     f.write("Channel: Local/#{q[1, 2]}@mor
-      MaxRetries: 1
-      RetryTime: 120
-      WaitTime: 30
-      Account: 8
-      Context: mor
-      Application: Queue
-      Data: problema_tecnico
-      Extension: #{q[1, 2]}
-      Priority: 1
-      Set: MOR_AD_CAMPAIGN_ID=3")
+MaxRetries: 1
+RetryTime: 120
+WaitTime: 30
+Account: 8
+Context: mor
+Application: Queue
+Data: problema_tecnico
+Extension: #{q[1, 2]}
+Priority: 1
+Set: MOR_AD_CAMPAIGN_ID=3")
   end
 
 
